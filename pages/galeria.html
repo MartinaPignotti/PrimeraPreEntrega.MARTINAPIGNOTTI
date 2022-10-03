@@ -3,31 +3,54 @@
 <head>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class=".page-gallery">
     <header>
-        <div class="container">
-          <p class="logo">SABORES</p>
-          <nav>
-            <a href="../index.html">inicio</a>
-            <a href="sobre-nosotros.html">sobre nosotros</a>
-            <a href="galeria.html">galeria</a>
-            <a href="contacto.html">contacto</a>
-          </nav>
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-logo">
+          <h2 class="">SABORES</h2>
+        </a>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./sobre-nosotros.html" class="nav-link">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="./galeria.html" class="nav-link">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contacto.html" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+  
+        <a href="#nav" class="nav-hamburguer">
+          <img src="../assents/images/menu.svg" class="nav-icon" />
+        </a>
+  
+        <a href="#" class="nav-close">
+          <img src="../assents/images/close.svg" class="nav-icon" />
+        </a>
+      </nav>
         </div>
     </header>
-    <main>
+    <main class="hero-color">
       <section>
         <div class="itt">
           <h3>Galeria</h3>
         </div>
         <div class="imagenes-grid">
             <div>
-                <h2 class="titulos">Album</h2>
+                <h2 class="titulos">Eventos</h2>
                 <img src="../assents/images/catering1.jpg" alt="uno" width="350px"> 
+           
+                <a href="album-event.html"><input type="button" value="Eventos" ></a> 
             </div>
             <div>
                 <h2>Platos</h2>
                 <img src="../assents/images/que-es-el-catering-en-un-evento.jpg" alt="dos" width="350px">
+              
+                <a href="album-plat.html"><input type="button" value="Album"></a>
             </div>
         </div>
       </section>

@@ -1,0 +1,26 @@
+header {
+  background-color: #f0b868;
+  height: 10vh; }
+  header .nav {
+    --state-hamburguer: scale(0);
+    --state-close: scale(0);
+    --state-menu: translate(0);
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content); }
+    header .nav:target {
+      --state-menu: translate(0);
+      --state-close: scale(0);
+      --state-hamburguer: scale(0); }
+    header .nav .nav-logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      header .nav .nav-logo h2 {
+        font-size: 1.5rem;
+        z-index: 1; }
+    header .nav .nav-hamburguer {
+      transform: var(--state-hamburguer); }
+    header .nav .nav-close {
+      transform: var(--state-close); }
